@@ -46,22 +46,22 @@ const RECEIVER_THROUGHPUT: MeasurementDefinition = MeasurementDefinition {
 };
 const DOWN_IPERF_CPU: MeasurementDefinition = MeasurementDefinition {
     id: "cpu.iperf.down",
-    label: "DOWN iperf CPU",
+    label: "DOWN iperf CPU (% of one logical CPU)",
     unit: Unit::Percent,
 };
 const UP_IPERF_CPU: MeasurementDefinition = MeasurementDefinition {
     id: "cpu.iperf.up",
-    label: "UP iperf CPU",
+    label: "UP iperf CPU (% of one logical CPU)",
     unit: Unit::Percent,
 };
 const DOWN_GOTATUN_CPU: MeasurementDefinition = MeasurementDefinition {
     id: "cpu.gotatun.down",
-    label: "DOWN GotaTun CPU",
+    label: "DOWN GotaTun CPU (% of one logical CPU)",
     unit: Unit::Percent,
 };
 const UP_GOTATUN_CPU: MeasurementDefinition = MeasurementDefinition {
     id: "cpu.gotatun.up",
-    label: "UP GotaTun CPU",
+    label: "UP GotaTun CPU (% of one logical CPU)",
     unit: Unit::Percent,
 };
 const READY_MARKER: &str = "BENCHY_READY";
