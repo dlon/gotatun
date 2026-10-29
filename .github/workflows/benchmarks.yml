@@ -1,6 +1,10 @@
 name: Benchmarks
 
 on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
     inputs:
       benchmarks:
@@ -18,6 +22,3 @@ jobs:
     with:
       benchmarks: ${{ inputs.benchmarks || 'default' }}
       manifest-path: benchmarks/Cargo.toml
-      bencher-project: ${{ vars.BENCHER_PROJECT }}
-    secrets:
-      BENCHER_API_KEY: ${{ secrets.BENCHER_API_KEY }}
